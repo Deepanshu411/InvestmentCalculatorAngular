@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<table>
+    <thead>
+        <th>Year</th>
+        <th>Annual Investment</th>
+        <th>Interest</th>
+        <th>Total Amount Invested</th>
+        <th>Total Interest</th>
+        <th>Value at end of Year</th>
+    </thead>
+    <tbody>
+        @for (result of results(); track result.year) {
+            <tr>
+                <td>{{result.year}}</td>
+                <td>{{result.annualInvestment}}</td>
+                <td>{{result.interest}}</td>
+                <td>{{result.totalAmountInvested}}</td>
+                <td>{{result.totalInterest}}</td>
+                <td>{{result.valueEndOfYear}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
