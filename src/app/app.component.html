@@ -7,11 +7,9 @@
 </head>
 <body>
     <app-header />
-    <app-user-input (calculate)="calculateInvestmentResults($event)" />
-    @if (investmentResults) {
-        <app-investment-results [results]="investmentResults" />
-    } @else {
-        <p class="center">Please enter values and click the Calculate button.</p>
-    }
+    
+    <app-user-input />
+    
+    <app-investment-results />
 </body>
 </html>
